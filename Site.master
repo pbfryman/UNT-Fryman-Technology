@@ -1,0 +1,75 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="Site" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fryman Technology</title>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial" rel="stylesheet" />
+    <link href="default.css" rel="stylesheet" type="text/css" />
+    <link href="font.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="header-wrapper">
+            <div id="header" class="container">
+                <div id="logo">
+	                <h3><a href="login.aspx">Login<span class="icon icon-user"></span></a><a href="Register.aspx">Register<span class="icon icon-pencil"></span></a></h3>
+                    <img src="images/logo.png" width="100" height="100" />
+                    <h1><a href="Default.aspx">Fryman Technology</a></h1>
+                </div>
+                <div id="menu">
+                    <asp:ContentPlaceHolder ID="MenuPlaceHolder" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+        </div>
+        <div class="wrapper">
+            <div id="banner" class="container">
+                <asp:ContentPlaceHolder ID="ImagePlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="welcome" class="container"></div>
+            <div class="title">
+                <asp:ContentPlaceHolder ID="TitlePlaceHolder" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+        <div id="three-column" class="container">
+            <div><span class="arrow-down"></span></div>
+            <asp:ContentPlaceHolder ID="ThreeColumnPlaceHolder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div id="footer">
+            <div class="container">
+                <div class="fbox1"><a href="https://www.google.com/maps/place/1307+W+Highland+St,+Denton,+TX+76201/@33.2090294,-97.1493647,17z/data=!3m1!4b1!4m5!3m4!1s0x864dca42ced1927b:0x4e35b61b3672ead1!8m2!3d33.2090249!4d-97.147176?hl=en">
+                    <div class="icon icon-map-marker"><br />
+                        <span>1307 W Highland St, Denton, TX 76201</span></div></a>
+                </div>
+                <div class="fbox1"><a href="tel:972-974-6999">
+                    <div class="icon icon-phone"><br />
+                        <span>(972) 974-6999</span></div></a>
+                </div>
+                </div>
+                <div class="fbox1"><a href="mailto:blakefryman12@gmail.com?Subject=Fryman%20Technology%20Service%20Request" target="_top">
+                    <div class="icon icon-envelope"><br />
+                        <span>blakefryman12@gmail.com</span></div></a>
+                </div>
+            </div>
+        <div id="copyright">
+            <p>&copy; Fryman Technology. All rights reserved. | Photos by <a href="http://pinterest.com/">Pinterest</a> | Design by Paul B. Fryman.</p>
+            <ul class="contact">
+                <li><a href="https://twitter.com/FrymanTech" class="icon icon-twitter"></a></li>
+                <li><a href="https://www.facebook.com/FrymanTechnology" class="icon icon-facebook"></a></li>
+                <li><a href="https://www.instagram.com/frymantech" class="icon icon-instagram"></a></li>
+            </ul>
+        </div>
+    </form>
+
+</body>
+</html>
